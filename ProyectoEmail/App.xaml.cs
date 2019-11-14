@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ProyectoEmail.UI;
+using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -10,7 +11,7 @@ namespace ProyectoEmail
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+            MainPage = new Principal();
         }
 
         protected override void OnStart()
