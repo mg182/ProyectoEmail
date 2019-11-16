@@ -5,13 +5,20 @@ using System.Text;
 
 namespace ProyectoEmail.Modelo
 {
-    class TablaUsuarios
+    public class TablaUsuarios
     {
 
         [PrimaryKey, AutoIncrement]
         public int id { get; set; }
-        public String nombre;
-        public String correo;
-        public String contraseña;
+        public String nombre { get; set; } 
+        public String correo { get; set; }
+        public String contraseña { get; set; }
+
+        public String cyc
+        {
+            get
+            {
+                return correo + " " + contraseña; } 
+         }
     }
 }

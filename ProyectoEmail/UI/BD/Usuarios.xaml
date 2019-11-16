@@ -6,10 +6,27 @@
              mc:Ignorable="d"
              x:Class="ProyectoEmail.UI.BD.Usuarios">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+        <!--<ScrollView>-->
+            <StackLayout Padding="20" Spacing="30">
+            <ListView x:Name="ListaUsuarios" ItemSelected="ListaUsuarios_ItemSelected" VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <TextCell Text="{Binding nombre}" Detail="{Binding cyc}"></TextCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+
+            <Button x:Name="btnAdd" WidthRequest="100" Text="Agregar" Clicked="btnAdd_Clicked" BorderWidth="1" 
+            BorderColor="DeepPink" 
+            BackgroundColor="DeepPink" 
+            BorderRadius="8"
+            TextColor="White" />
+
+            <Label Text="Toca un registro para modificar o eliminar"></Label>
+               
+            
         </StackLayout>
+            <!--</ScrollView>-->
     </ContentPage.Content>
 </ContentPage>

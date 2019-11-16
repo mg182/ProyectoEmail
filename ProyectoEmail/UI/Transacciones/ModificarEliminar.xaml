@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="ProyectoEmail.UI.Transacciones.ModificarEliminar">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label x:Name="notification" TextColor="Red"></Label>
+            <Label Text="Nombre de usuario"/>
+            <Entry x:Name="user"/>
+            <Label Text="Correo electrónico"/>
+            <Entry x:Name="email"/>
+            <Label Text="Contraseña"/>
+            <Entry x:Name="pass"/>
+            <Button x:Name="btnModify" WidthRequest="100" Text="Modificar" Clicked="btnModify_Clicked"  BorderWidth="1" 
+            BorderColor="DeepPink" 
+            BackgroundColor="DeepPink" 
+            BorderRadius="8"
+            TextColor="White" />
+            <Button x:Name="btnDelete" WidthRequest="100" Text="Eliminar" Clicked="btnDelete_Clicked" BorderWidth="1" 
+            BorderColor="DeepPink" 
+            BackgroundColor="DeepPink" 
+            BorderRadius="8"
+            TextColor="White" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -14,10 +14,10 @@
                 <ListView.ItemTemplate>
                     <DataTemplate>
 
-                        <ImageCell TextColor="Black" DetailColor="Black" Height="25"
-                                   Text="{Binding MenuTitle}"
-                                   Detail="{Binding MenuDetail}"
-                                   ImageSource="{Binding icon}" > 
+                        <ImageCell TextColor="Black" DetailColor="Black"  Height="50" 
+                                   Text="{Binding Title}"
+                                   Detail="{Binding Menudetail}"
+                                   ImageSource="{Binding Icon}" > 
                     </ImageCell>
                     </DataTemplate>
                     </ListView.ItemTemplate>

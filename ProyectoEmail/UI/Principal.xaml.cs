@@ -12,25 +12,27 @@ namespace ProyectoEmail.UI
         public Principal()
         {
             InitializeComponent();
+            HMenu();
         }
          
-        public void MyMenu()
+        public void HMenu()
         {
             Detail = new NavigationPage(new Feed());
             List<Menu> menu = new List<Menu>
             {
-                new Menu {Page= new Usuarios(), Title="Usuarios", Menudetail="Agregar correos", Icon="icons/users.png"},
-                new Menu {Page= new Favoritos(), Title="Favoritos", Menudetail="Agregar a favoritos", Icon="icons/coord_fav.png"},
-                new Menu {Page= new Conta(),Title="Contaduria", Menudetail="Campus I", Icon="icons/contaduria.png"},
-                new Menu {Page= new Cqb(),Title="Ciencias Quimico Biologicas", Menudetail="Campus V", Icon="icons/cqb.png"},
-                new Menu {Page= new Derecho(),Title="Derecho", Menudetail="Campus I", Icon="icons/derecho.png"},
-                new Menu {Page= new Enfermeria(),Title="Enfermeria", Menudetail="Campus III", Icon="icons/enfermeria.png"},
-                new Menu {Page= new Humanidades(),Title="Humanidades", Menudetail="Campus I", Icon="icons/humanidades.png"},
-                new Menu {Page= new Inge(),Title="Ingenieria", Menudetail="Campus v", Icon="icons/ingenieria.png"},
-                new Menu {Page= new Medicina(),Title="Medicina", Menudetail="Campus III", Icon="icons/medicina.png"},
-                new Menu {Page= new Odontologia(),Title="Odontologia", Menudetail="Campus I", Icon="icons/odontologia.png"},
-                new Menu {Page= new Sociales(),Title="Sociales", Menudetail="Campus I", Icon="icons/sociales.png"}
+                new Menu {Page= new Usuarios(), Title="Usuarios", Menudetail="Agregar correos", Icon="users.png"},
+                new Menu {Page= new Favoritos(), Title="Favoritos", Menudetail="Agregar a favoritos", Icon="coord_fav.png"},
+                new Menu {Page= new Conta(),Title="Contaduria", Menudetail="Campus I", Icon="contaduria.png"},
+                new Menu {Page= new Cqb(),Title="Ciencias Quimico Biologicas", Menudetail="Campus V", Icon="cqb.png"},
+                new Menu {Page= new Derecho(),Title="Derecho", Menudetail="Campus I", Icon="derecho.png"},
+                new Menu {Page= new Enfermeria(),Title="Enfermeria", Menudetail="Campus III", Icon="enfermeria.png"},
+                new Menu {Page= new Humanidades(),Title="Humanidades", Menudetail="Campus I", Icon="humanidades.png"},
+                new Menu {Page= new Inge(),Title="Ingenieria", Menudetail="Campus v", Icon="ingenieria.png"},
+                new Menu {Page= new Medicina(),Title="Medicina", Menudetail="Campus III", Icon="medicina.png"},
+                new Menu {Page= new Odontologia(),Title="Odontologia", Menudetail="Campus I", Icon="odontologia.png"},
+                new Menu {Page= new Sociales(),Title="Sociales", Menudetail="Campus I", Icon="sociales.png"}
             };
+            ListMenu.ItemsSource = menu;
         }
 
         public class Menu

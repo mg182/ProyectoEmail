@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="ProyectoEmail.UI.Transacciones.Agregarusuario">
+    <ContentPage.Content>
+        <StackLayout  Padding="20" Spacing="30">
+            <Label Text="Nombre de usuario"/>
+            <Entry x:Name="user"/>
+            <Label Text="Correo electrónico"/>
+            <Entry x:Name="email"/>
+            <Label Text="Contraseña"/>
+            <Entry x:Name="pass" IsPassword="True"/>
+            <Button x:Name="btnAdd" WidthRequest="100" Text="Agregar" Clicked="btnAdd_Clicked" BorderWidth="1" 
+            BorderColor="DeepPink" 
+            BackgroundColor="DeepPink" 
+            BorderRadius="8"
+            TextColor="White" />
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
