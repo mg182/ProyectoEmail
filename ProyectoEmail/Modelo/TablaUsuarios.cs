@@ -10,7 +10,7 @@ namespace ProyectoEmail.Modelo
 
         [PrimaryKey, AutoIncrement]
         public int id { get; set; }
-        public String nombre { get; set; } 
+        public String nombre { get; set; }
         public String correo { get; set; }
         public String contraseña { get; set; }
 
@@ -18,7 +18,15 @@ namespace ProyectoEmail.Modelo
         {
             get
             {
-                return correo + " " + contraseña; } 
-         }
+                return correo + " " + contraseña; }
+        }
+
+        public String cyu
+        {
+            get
+            {
+                return nombre + " " + correo;
+            }
+        }
     }
 }

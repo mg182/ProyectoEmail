@@ -5,11 +5,16 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
              x:Class="ProyectoEmail.UI.Facultades.Conta">
+   
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+            <ListView x:Name="lcontaduria">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <TextCell Text="{Binding nombrec}" Detail="{Binding cyc}"></TextCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView> 
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

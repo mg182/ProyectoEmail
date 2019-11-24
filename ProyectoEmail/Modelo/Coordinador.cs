@@ -7,11 +7,17 @@ namespace ProyectoEmail.Modelo
     class Coordinador
     {
 
-        public String nombre { get; set; }
-        public String apellido { get; set; }
-        public String facultad { get; set; }
+        public String nombrec { get; set; }  
         public String carrera { get; set; }
         public String email { get; set; }
+
+        public String cyc
+        {
+            get
+            {
+                return carrera + " " + email;
+            }
+        }
 
 
     }

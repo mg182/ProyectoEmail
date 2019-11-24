@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ProyectoEmail.Modelo;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -15,6 +16,14 @@ namespace ProyectoEmail.UI.Facultades
         public Odontologia()
         {
             InitializeComponent();
+            lodo.ItemsSource = new List<Coordinador>()
+            {
+                new Coordinador() { nombrec="M. en C. Verónica López Torres",carrera="Lic en Odontologia",email="verlopez@uacam.mx"}
+               
+
+
+            }; 
+
         }
     }
 }

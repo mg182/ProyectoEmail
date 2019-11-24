@@ -20,11 +20,29 @@ namespace ProyectoEmail.UI.Transacciones
         }
 
         private void btnAdd_Clicked(object sender, EventArgs e)
+
+
+            
         {
-            var DatosUsuario = new TablaUsuarios { nombre = user.Text, correo = email.Text, contraseña = pass.Text };
-            _conn.InsertAsync(DatosUsuario);
-            DisplayAlert("Exitoso", "Se ha agregado el usuario","Regresar");
-            clean();
+            var eu = string.IsNullOrEmpty(user.Text);
+            var ec = string.IsNullOrEmpty(email.Text);
+            var ep = string.IsNullOrEmpty(pass.Text);
+
+            if (eu || ec || ep)
+            {
+                DisplayAlert("Error", "Uno o mas campos estan vacios", "OK");
+            }
+
+            else
+            {
+
+
+
+                var DatosUsuario = new TablaUsuarios { nombre = user.Text, correo = email.Text, contraseña = pass.Text };
+                _conn.InsertAsync(DatosUsuario);
+                DisplayAlert("Exitoso", "Se ha agregado el usuario", "Regresar");
+                clean();
+            }
         } 
 
          void clean()

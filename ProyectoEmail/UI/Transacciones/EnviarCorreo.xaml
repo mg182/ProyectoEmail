@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="ProyectoEmail.UI.Transacciones.EnviarCorreo">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout>
+            <StackLayout>
+                <Label  Text="Enviar email" FontAttributes="Bold" FontSize="Large" TextColor="Blue" HorizontalTextAlignment="Center" ></Label>
+                <Picker x:Name="pcorreo" Title="Selecciona un usuario" TitleColor="Blue"  ItemDisplayBinding="{Binding nombre}" SelectedIndexChanged="pcorreo_SelectedIndexChanged"></Picker>
+                    <Label Text="Remitente" TextColor="Pink" VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" ></Label>
+                    <Entry x:Name="txtfrom" IsReadOnly="True"  ></Entry>
+                    <Label Text="Destinatario" TextColor="Pink"  VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" ></Label>
+                    <Entry x:Name="txtTo" IsReadOnly="True" ></Entry>
+                    <Label Text="Asunto"  TextColor="Pink"  VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" ></Label>
+                    <Entry x:Name="txtSubject"   ></Entry>
+                    <Label Text="Cuerpo"  TextColor="Pink" VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" ></Label>
+                    <Editor x:Name="txtBody" HeightRequest="300"  ></Editor>
+                    <Button x:Name="btnSend" WidthRequest="100" Text="Enviar correo"  BorderWidth="1" 
+                      BorderColor="DeepPink" 
+                      BackgroundColor="DeepPink" 
+                      BorderRadius="8"
+                      TextColor="White" Clicked="btnSend_Clicked"/>
+                </StackLayout>
+        </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

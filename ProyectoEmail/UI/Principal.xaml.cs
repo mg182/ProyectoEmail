@@ -21,7 +21,6 @@ namespace ProyectoEmail.UI
             List<Menu> menu = new List<Menu>
             {
                 new Menu {Page= new Usuarios(), Title="Usuarios", Menudetail="Agregar correos", Icon="users.png"},
-                new Menu {Page= new Favoritos(), Title="Favoritos", Menudetail="Agregar a favoritos", Icon="coord_fav.png"},
                 new Menu {Page= new Conta(),Title="Contaduria", Menudetail="Campus I", Icon="contaduria.png"},
                 new Menu {Page= new Cqb(),Title="Ciencias Quimico Biologicas", Menudetail="Campus V", Icon="cqb.png"},
                 new Menu {Page= new Derecho(),Title="Derecho", Menudetail="Campus I", Icon="derecho.png"},
@@ -30,7 +29,7 @@ namespace ProyectoEmail.UI
                 new Menu {Page= new Inge(),Title="Ingenieria", Menudetail="Campus v", Icon="ingenieria.png"},
                 new Menu {Page= new Medicina(),Title="Medicina", Menudetail="Campus III", Icon="medicina.png"},
                 new Menu {Page= new Odontologia(),Title="Odontologia", Menudetail="Campus I", Icon="odontologia.png"},
-                new Menu {Page= new Sociales(),Title="Sociales", Menudetail="Campus I", Icon="sociales.png"}
+               
             };
             ListMenu.ItemsSource = menu;
         }

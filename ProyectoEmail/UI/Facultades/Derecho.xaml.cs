@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ProyectoEmail.Modelo;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -15,6 +16,11 @@ namespace ProyectoEmail.UI.Facultades
         public Derecho()
         {
             InitializeComponent();
+            lder.ItemsSource = new List<Coordinador>()
+            {
+               new Coordinador() { nombrec="Licda. Maricela del S. Aguayo González",carrera="Lic en Derecho", email="msaguayo@uacam.mx"}
+
+            };
         }
     }
 }
